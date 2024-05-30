@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom</title>
+    <style>
+        .main{
+            position: relative;
+            background-color: darkkhaki;
+            width:800px;
+            height: 700px;
+            /* margin=1stone=top,2ndOne:leftside */
+            margin: 20px 350px;
+        }
+        .div1{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .div2{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color:red;
+        }
+        .div3{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color:green;
+        }
+        .div4{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color:yellow;
+        }
+
+        div:first-child{
+            top: 0;
+        }
+        div:nth-child(2){
+            bottom: 0;
+        }
+        div:nth-child(3){
+            bottom: 0;
+            right: 0;
+        }
+        div:nth-child(4){
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+    </div>
+    
+</body>
+</html>
